@@ -7,6 +7,10 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
+[![Live Deployment](https://img.shields.io/badge/Live_Console-aegis--rag--rho.vercel.app-38BDF8?style=for-the-badge&logo=vercel&logoColor=white)](https://aegis-rag-rho.vercel.app)
+
+> 🌐 **Live Operational Cockpit**: [https://aegis-rag-rho.vercel.app](https://aegis-rag-rho.vercel.app)
+
 An enterprise-grade, zero-trust security proxy for Retrieval-Augmented Generation (RAG) pipelines in defense, intelligence, and regulated financial environments. Eliminates **Top-K Starvation** and **Vector Space Poisoning** via Google Zanzibar-style push-down relationship-based access control (ReBAC) pre-filtering, bi-directional reversible HMAC PII vaults, and tamper-evident cryptographic audit streams.
 
 ---
