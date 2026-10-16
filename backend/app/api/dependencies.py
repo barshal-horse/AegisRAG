@@ -13,11 +13,19 @@ from app.storage.audit_store import AuditStore
 from app.services.aegis_proxy import AegisProxyService
 from seed.seed_enterprise_graph import seed_enterprise_environment
 
+import os
+from pathlib import Path
+
 # Module-level singletons
+_default_db = os.getenv("AEGIS_DB_PATH")
+if not _default_db:
+    _candidate = Path(__file__).resolve().parent.parent.parent.parent / "data" / "aegis_audit.db"
+    _default_db = str(_candidate)
+
 _zanzibar = ZanzibarEngine()
 _vector_engine = VectorSearchEngine(dim=128)
 _pii_vault = PIITokenVault()
-_audit_store = AuditStore(db_path="data/aegis_audit.db")
+_audit_store = AuditStore(db_path=_default_db)
 _proxy_service = AegisProxyService(
     zanzibar=_zanzibar,
     vector_engine=_vector_engine,
