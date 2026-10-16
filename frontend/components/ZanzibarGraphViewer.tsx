@@ -144,7 +144,7 @@ export const ZanzibarGraphViewer: React.FC<ZanzibarGraphViewerProps> = ({ curren
   }, 0).toString(16).toUpperCase();
 
   return (
-    <div className="flex-1 flex flex-col p-4 font-mono text-xs select-none space-y-4 overflow-y-auto">
+    <div className="flex-1 flex flex-col p-4 font-sans text-xs select-none space-y-4 overflow-y-auto">
       {/* Header Banner */}
       <div className="p-3.5 bg-surface border border-border rounded-sm flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center space-x-3">

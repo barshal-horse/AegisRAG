@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-canvas text-aegis-text antialiased min-h-screen selection:bg-aegis-blue/30 selection:text-white">
+    <html lang="en" className={`dark ${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className="bg-background text-text-primary font-sans antialiased min-h-screen selection:bg-accent/30 selection:text-white">
         {children}
       </body>
     </html>

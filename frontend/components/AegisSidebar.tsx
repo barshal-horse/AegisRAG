@@ -77,7 +77,7 @@ export const AegisSidebar: React.FC<SidebarProps> = ({
   ];
 
   return (
-    <aside className="w-64 shrink-0 bg-card border-r border-border h-screen flex flex-col justify-between font-mono text-xs select-none sticky top-0">
+    <aside className="w-64 shrink-0 bg-card border-r border-border h-screen flex flex-col justify-between font-sans text-xs select-none sticky top-0">
       {/* 1. Brand Header */}
       <div className="h-14 shrink-0 px-4 border-b border-border flex items-center justify-between">
         <div className="flex items-center space-x-2.5">

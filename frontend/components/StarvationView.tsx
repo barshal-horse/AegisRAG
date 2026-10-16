@@ -79,7 +79,7 @@ export const StarvationView: React.FC<StarvationViewProps> = ({
   const isStarved = naiveResult?.starvation_occurred || (naiveResult?.chunks_starved ?? 0) > 0;
 
   return (
-    <div className="space-y-6 font-mono text-xs select-none">
+    <div className="space-y-6 font-sans text-xs select-none">
       {/* 1. Attack Console Card */}
       <div className="bg-card border border-border rounded-lg p-5 space-y-4 shadow-sm">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">

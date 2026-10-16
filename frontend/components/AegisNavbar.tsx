@@ -45,7 +45,7 @@ export const AegisNavbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <header className="h-14 shrink-0 bg-card border-b border-border px-6 flex items-center justify-between sticky top-0 z-10 font-mono text-xs select-none">
+    <header className="h-14 shrink-0 bg-card border-b border-border px-6 flex items-center justify-between sticky top-0 z-10 font-sans text-xs select-none">
       {/* Breadcrumb / Title */}
       <div className="flex items-center space-x-3 min-w-0">
         <span className="text-text-muted hidden sm:inline">Aegis Security</span>
